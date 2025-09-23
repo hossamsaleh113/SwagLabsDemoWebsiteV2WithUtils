@@ -6,6 +6,8 @@ import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
 
+import static com.swaglabs.utils.AllureUtils.REPORT_PATH;
+
 public class FilesUtiles {
     private FilesUtiles(){
         super();
@@ -56,6 +58,18 @@ public class FilesUtiles {
 
         } catch (Exception e) {
             LogsUtils.error("Failed to clean directory" , file + e.getMessage());
+        }
+    }
+
+    public static void renameFile(File oldName, File newName) {
+        try {
+            File targetFile = oldName.getParentFile().getAbsoluteFile();
+            String targetDirectory = REPORT_PATH + File.separator + newName.getName();
+            FileUtils.copyFile(oldName, new File(targetDirectory));
+            FileUtils.deleteQuietly(oldName);
+            LogsUtils.info("Target file path" , targetFile.getName() , "was renamed to" , newName.getName());
+        } catch (Exception e) {
+            LogsUtils.error("Failed to copy file" + e.getMessage());
         }
     }
 }

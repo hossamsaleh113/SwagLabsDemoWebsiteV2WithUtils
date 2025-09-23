@@ -13,7 +13,6 @@ public class TestNGListeners implements IExecutionListener, ITestListener, IInvo
     private final File screenshots = new File("test-outputs/screenshots");
 
 
-
     @Override
     public void onExecutionStart() {
         LogsUtils.info("Test execution started");
@@ -26,6 +25,9 @@ public class TestNGListeners implements IExecutionListener, ITestListener, IInvo
 
     @Override
     public void onExecutionFinish() {
+        AllureUtils.generateAllureReport();
+        String reportName = AllureUtils.renameReport();
+        AllureUtils.openReport(reportName);
         LogsUtils.info("Test execution finished");
 
     }
@@ -33,14 +35,10 @@ public class TestNGListeners implements IExecutionListener, ITestListener, IInvo
     @Override
     public void afterInvocation(IInvokedMethod method, ITestResult testResult) {
 
-        if(method.isTestMethod()){
-            try {
-                CustomSoftAssertion.customAssertAll();
-            } catch (Exception e) {
-                testResult.setStatus(ITestResult.FAILURE);
-                testResult.setThrowable(e);
-            }
-            switch (testResult.getStatus()){
+        if (method.isTestMethod()) {
+
+            CustomSoftAssertion.customAssertAll(testResult);
+            switch (testResult.getStatus()) {
                 case ITestResult.SUCCESS -> ScreenshotsUtils.takeScreenshot("passed-" + testResult.getName());
                 case ITestResult.FAILURE -> ScreenshotsUtils.takeScreenshot("failed-" + testResult.getName());
                 case ITestResult.SKIP -> ScreenshotsUtils.takeScreenshot("skipped-" + testResult.getName());
@@ -54,16 +52,16 @@ public class TestNGListeners implements IExecutionListener, ITestListener, IInvo
 
     @Override
     public void onTestSuccess(ITestResult result) {
-        LogsUtils.info("Test case" , result.getName() , "passed!");
+        LogsUtils.info("Test case", result.getName(), "passed!");
     }
 
     @Override
     public void onTestFailure(ITestResult result) {
-        LogsUtils.info("Test case" , result.getName() , "failed!");
+        LogsUtils.info("Test case", result.getName(), "failed!");
     }
 
     @Override
     public void onTestSkipped(ITestResult result) {
-        LogsUtils.info("Test case" , result.getName() , "skipped!");
+        LogsUtils.info("Test case", result.getName(), "skipped!");
     }
 }

@@ -1,5 +1,6 @@
 package com.swaglabs.pages;
 
+import com.swaglabs.driver.GUI_Driver;
 import com.swaglabs.utils.ElementActions;
 import com.swaglabs.utils.LogsUtils;
 import com.swaglabs.utils.Validation;
@@ -10,10 +11,10 @@ import org.openqa.selenium.support.locators.RelativeLocator;
 
 public class HomePage {
     //variables
-    private final WebDriver driver;
+    private final GUI_Driver driver;
 
     //constructor
-    public HomePage(WebDriver driver){
+    public HomePage(GUI_Driver driver){
         this.driver = driver;
     }
 
@@ -27,14 +28,14 @@ public class HomePage {
     public HomePage addSpecificItemToCart(String itemName){
         LogsUtils.info("Adding" , itemName , "to Cart");
         By locator = RelativeLocator.with(button).below(By.xpath("//div[contains(text(), '" + itemName +"')]"));
-        ElementActions.clickElement(driver , locator);
+        driver.element().click(locator);
         return this;
     }
 
     @Step("Clicking cart icon")
     public CartPage clickCartIcon(){
         LogsUtils.info("Clicking Cart Icon");
-        ElementActions.clickElement(driver , cartIcon);
+        driver.element().click(cartIcon);
         return new CartPage(driver);
     }
 
@@ -44,7 +45,7 @@ public class HomePage {
     public HomePage assertItemAddedToCart(String itemName){
 
         By locator = RelativeLocator.with(button).below(By.xpath("//div[contains(text(), '" + itemName +"')]"));
-        Validation.validateTrue(ElementActions.getText(driver , locator).contains("Remove") ,
+        Validation.validateTrue(driver.element().getText(locator).contains("Remove") ,
                 "Incorrect Adding");
         LogsUtils.info( itemName,"added to cart successfully");
         return this;

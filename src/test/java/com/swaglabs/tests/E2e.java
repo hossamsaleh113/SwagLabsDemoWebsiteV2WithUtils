@@ -1,20 +1,19 @@
 package com.swaglabs.tests;
 
-import com.swaglabs.driver.DriverManager;
+import com.swaglabs.driver.GUI_Driver;
 import com.swaglabs.listeners.TestNGListeners;
 import com.swaglabs.pages.CartPage;
 import com.swaglabs.pages.HomePage;
 import com.swaglabs.pages.InformationPage;
 import com.swaglabs.pages.LoginPage;
 import com.swaglabs.utils.*;
-import org.openqa.selenium.WebDriver;
 import org.testng.annotations.*;
 
 import static com.swaglabs.utils.TimeStampUtils.getTimeStamp;
 
 @Listeners(TestNGListeners.class)
 public class E2e {
-    private WebDriver driver;
+    private GUI_Driver driver;
     private JsonUtils testData;
     String FIRST_NAME;
     String LAST_NAME;
@@ -61,13 +60,13 @@ public class E2e {
         FIRST_NAME = testData.getJsonData("checkout-information.firstName") + getTimeStamp();
         LAST_NAME = testData.getJsonData("checkout-information.firstName") + getTimeStamp();
         String browserName = System.getProperty("browserType");
-        driver = DriverManager.createInstance(browserName);
+        driver = new GUI_Driver(browserName);
         new LoginPage(driver).navigateToPage();
     }
 
     @AfterClass
     public void tearDown() {
-        BrowserActions.closeBrowser(driver);
+        driver.browser().closeBrowser();
     }
 
 

@@ -5,7 +5,9 @@ import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 
 public class Validation {
-    private Validation() {
+    private WebDriver driver;
+    public Validation(WebDriver driver) {
+        this.driver = driver;
     }
 
     @Step("Validate true")
@@ -28,12 +30,12 @@ public class Validation {
     }
 
     @Step("Validate url")
-    public static void validatePageURL(WebDriver driver, String expected) {
-        Assert.assertEquals(BrowserActions.getCurrentURL(driver), expected);
+    public void validatePageURL(String expected) {
+        Assert.assertEquals(driver.getCurrentUrl(), expected);
     }
 
     @Step("Validate title")
-    public static void validatePageTitle(WebDriver driver, String expected) {
-        Assert.assertEquals(BrowserActions.getPageTitle(driver), expected);
+    public void validatePageTitle(String expected) {
+        Assert.assertEquals(driver.getCurrentUrl(), expected);
     }
 }
