@@ -49,6 +49,12 @@ public class LoginPage {
         return driver.element().getText(this.errorMassage);
     }
 
+    @Step("Successfully Login")
+    public HomePage successfullLogin(String username , String password){
+        enterUsername(username).enterPassword(password).clickLogin();
+        return new HomePage(driver);
+    }
+
     //Validations
 
     @Step("Asserting home page url")

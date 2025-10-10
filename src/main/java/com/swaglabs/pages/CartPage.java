@@ -2,16 +2,15 @@ package com.swaglabs.pages;
 
 import com.swaglabs.driver.GUI_Driver;
 import com.swaglabs.utils.CustomSoftAssertion;
-import com.swaglabs.utils.ElementActions;
 import io.qameta.allure.Step;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 
 public class CartPage {
     //variables
     private GUI_Driver driver;
     //locators
     private final By checkoutButton = By.id("checkout");
+    private final By continueShopButton = By.id("continue-shopping");
     //constructor
     public CartPage(GUI_Driver driver){
         this.driver = driver;

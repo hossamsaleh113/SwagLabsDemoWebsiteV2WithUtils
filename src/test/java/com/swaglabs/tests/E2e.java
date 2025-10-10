@@ -30,7 +30,7 @@ public class E2e {
     @Test(dependsOnMethods = "testSuccessfulLogin")
     public void testAddItemToCart() {
         new HomePage(driver).addSpecificItemToCart(testData.getJsonData("products-list.item2.name")).
-                assertItemAddedToCart(testData.getJsonData("products-list.item2.name"));
+                assertItemAddedToCart(testData.getJsonData("products-list.item2.name")).assertCartIconNumber("1");
     }
 
     @Test(dependsOnMethods = "testAddItemToCart")

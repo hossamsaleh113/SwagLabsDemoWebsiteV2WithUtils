@@ -31,11 +31,13 @@
                 <configuration>
                     <argLine>
                         -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/1.9.22/aspectjweaver-1.9.22.jar"
-                    </argLine>
+
+              </argLine>
                 </configuration>
             </plugin>
         </plugins>
     </build>
+
 
     <properties>
         <maven.compiler.source>21</maven.compiler.source>

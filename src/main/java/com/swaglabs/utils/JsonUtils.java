@@ -1,12 +1,9 @@
 package com.swaglabs.utils;
 
 import com.jayway.jsonpath.JsonPath;
-import io.qameta.allure.internal.shadowed.jackson.core.JsonParser;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
-
 import java.io.FileReader;
-import java.io.IOException;
 
 public class JsonUtils {
     private static final String JSON_FILE_PATH = "src/test/resources/";
