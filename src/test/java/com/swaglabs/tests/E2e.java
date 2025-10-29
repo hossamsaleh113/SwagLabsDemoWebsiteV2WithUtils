@@ -12,12 +12,7 @@ import org.testng.annotations.*;
 import static com.swaglabs.utils.TimeStampUtils.getTimeStamp;
 
 @Listeners(TestNGListeners.class)
-public class E2e {
-    private GUI_Driver driver;
-    private JsonUtils testData;
-    String FIRST_NAME;
-    String LAST_NAME;
-
+public class E2e extends BaseTest {
 
     //Tests
     @Test
@@ -50,24 +45,6 @@ public class E2e {
         new InformationPage(driver).clickContinue().clickOnFinishButton().assertConfirmationMassage(System.getProperty("confirmationMassage"));
     }
 
-
-    // Configurations
-
-
-    @BeforeClass
-    public void beforeClass() {
-        testData = new JsonUtils("test-data");
-        FIRST_NAME = testData.getJsonData("checkout-information.firstName") + getTimeStamp();
-        LAST_NAME = testData.getJsonData("checkout-information.firstName") + getTimeStamp();
-        String browserName = System.getProperty("browserType");
-        driver = new GUI_Driver(browserName);
-        new LoginPage(driver).navigateToPage();
-    }
-
-    @AfterClass
-    public void tearDown() {
-        driver.browser().closeBrowser();
-    }
 
 
 }

@@ -1,6 +1,6 @@
-package com.swaglabs.utils;
+package com.swaglabs.utils.actions;
 
-import com.swaglabs.driver.GUI_Driver;
+import com.swaglabs.utils.LogsManager;
 import io.qameta.allure.Step;
 import org.openqa.selenium.WebDriver;
 
@@ -14,31 +14,32 @@ public class BrowserActions {
     @Step("Navigating to URL: {url} ")
     public void navigateToURL( String url) {
         driver.get(url);
-        LogsUtils.info("Navigated to URL", url);
+        LogsManager.info("Navigated to URL", url);
 
     }
 
     @Step("Getting current URL")
     public String getCurrentURL() {
-        LogsUtils.info("Current URL is:", driver.getCurrentUrl());
+        LogsManager.info("Current URL is:", driver.getCurrentUrl());
         return driver.getCurrentUrl();
     }
 
     @Step("Getting page title")
     public String getPageTitle() {
-        LogsUtils.info("Current Page is:", driver.getTitle());
+        LogsManager.info("Current Page is:", driver.getTitle());
         return driver.getTitle();
     }
 
     @Step("Refreshing the page")
     public void refreshPage() {
-        LogsUtils.info("Refreshing the page");
+        LogsManager.info("Refreshing the page");
         driver.navigate().refresh();
     }
 
     @Step("Closing the browser")
     public void closeBrowser() {
-        LogsUtils.info("Closing the browser and ending session!");
+        LogsManager.info("Closing the browser and ending session!");
         driver.quit();
     }
+
 }

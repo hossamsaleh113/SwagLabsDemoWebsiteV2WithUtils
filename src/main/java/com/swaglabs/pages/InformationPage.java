@@ -1,11 +1,8 @@
 package com.swaglabs.pages;
 
 import com.swaglabs.driver.GUI_Driver;
-import com.swaglabs.utils.CustomSoftAssertion;
-import com.swaglabs.utils.ElementActions;
 import io.qameta.allure.Step;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 
 public class InformationPage {
     //variables
@@ -45,9 +42,9 @@ public class InformationPage {
 
     //validations
     public InformationPage assertInputInformation(String fName, String lName, String zip) {
-        CustomSoftAssertion.softAssert.assertEquals(driver.element().getTextFromInputField( fNameField), fName);
-        CustomSoftAssertion.softAssert.assertEquals(driver.element().getTextFromInputField(lNameField), lName);
-        CustomSoftAssertion.softAssert.assertEquals(driver.element().getTextFromInputField( zipField), zip);
+        driver.verifications().assertEquals(driver.element().getTextFromInputField( fNameField), fName , "Incorrect first name");
+        driver.verifications().assertEquals(driver.element().getTextFromInputField(lNameField), lName ,"Incorrect last name" );
+        driver.verifications().assertEquals(driver.element().getTextFromInputField( zipField), zip , "Incorrect zip code");
 
 
         return this;

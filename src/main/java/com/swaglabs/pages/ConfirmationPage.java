@@ -1,11 +1,8 @@
 package com.swaglabs.pages;
 
 import com.swaglabs.driver.GUI_Driver;
-import com.swaglabs.utils.ElementActions;
-import com.swaglabs.utils.Validation;
 import io.qameta.allure.Step;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 
 public class ConfirmationPage {
     //variables
@@ -24,7 +21,7 @@ public class ConfirmationPage {
     //validations
     @Step("Assert confirmation massage: {0}")
     public ConfirmationPage assertConfirmationMassage(String expected){
-        Validation.validateEquals(getConfirmationMassage() , expected , "Incorrect massage");
+        driver.validations().assertEquals(getConfirmationMassage() , expected , "Incorrect massage");
         return this;
     }
 }

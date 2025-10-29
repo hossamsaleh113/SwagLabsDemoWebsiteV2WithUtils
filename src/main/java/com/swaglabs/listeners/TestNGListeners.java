@@ -1,7 +1,12 @@
 package com.swaglabs.listeners;
 
 import com.swaglabs.utils.*;
-import org.apache.commons.io.FileUtils;
+import com.swaglabs.utils.media.ScreenshotsManager;
+import com.swaglabs.utils.reports.AllureAttachmentManager;
+import com.swaglabs.utils.reports.AllureConstants;
+import com.swaglabs.utils.reports.AllureEnvironmentManager;
+import com.swaglabs.utils.reports.AllureReportGenerator;
+import com.swaglabs.validations.SoftAssertion;
 import org.testng.*;
 
 import java.io.File;
@@ -15,20 +20,22 @@ public class TestNGListeners implements IExecutionListener, ITestListener, IInvo
 
     @Override
     public void onExecutionStart() {
-        LogsUtils.info("Test execution started");
         PropertiesUtils.loadProperties();
-        FilesUtiles.deleteFiles(allure_results);
-        FilesUtiles.cleanDirectory(logs);
-        FilesUtiles.cleanDirectory(screenshots);
+        AllureEnvironmentManager.setEnvironmentVariables();
+        LogsManager.info("Test execution started");
+        FilesUtils.deleteFiles(allure_results);
+        FilesUtils.cleanDirectory(logs);
+        FilesUtils.cleanDirectory(screenshots);
 
     }
 
     @Override
     public void onExecutionFinish() {
-        AllureUtils.generateAllureReport();
-        String reportName = AllureUtils.renameReport();
-        AllureUtils.openReport(reportName);
-        LogsUtils.info("Test execution finished");
+        AllureReportGenerator.copyHistory();
+        AllureReportGenerator.generateReports(false);
+        AllureReportGenerator.generateReports(true);
+        AllureReportGenerator.openReport();
+        LogsManager.info("Test execution finished");
 
     }
 
@@ -37,31 +44,28 @@ public class TestNGListeners implements IExecutionListener, ITestListener, IInvo
 
         if (method.isTestMethod()) {
 
-            CustomSoftAssertion.customAssertAll(testResult);
+            SoftAssertion.assertAll(testResult);
             switch (testResult.getStatus()) {
-                case ITestResult.SUCCESS -> ScreenshotsUtils.takeScreenshot("passed-" + testResult.getName());
-                case ITestResult.FAILURE -> ScreenshotsUtils.takeScreenshot("failed-" + testResult.getName());
-                case ITestResult.SKIP -> ScreenshotsUtils.takeScreenshot("skipped-" + testResult.getName());
-
-
+                case ITestResult.SUCCESS -> ScreenshotsManager.takeScreenshot("passed-" + testResult.getName());
+                case ITestResult.FAILURE -> ScreenshotsManager.takeScreenshot("failed-" + testResult.getName());
+                case ITestResult.SKIP -> ScreenshotsManager.takeScreenshot("skipped-" + testResult.getName());
             }
-
-            AllureUtils.attachLogsToAllure();
+            AllureAttachmentManager.attachLogs();
         }
     }
 
     @Override
     public void onTestSuccess(ITestResult result) {
-        LogsUtils.info("Test case", result.getName(), "passed!");
+        LogsManager.info("Test case", result.getName(), "passed!");
     }
 
     @Override
     public void onTestFailure(ITestResult result) {
-        LogsUtils.info("Test case", result.getName(), "failed!");
+        LogsManager.info("Test case", result.getName(), "failed!");
     }
 
     @Override
     public void onTestSkipped(ITestResult result) {
-        LogsUtils.info("Test case", result.getName(), "skipped!");
+        LogsManager.info("Test case", result.getName(), "skipped!");
     }
 }

@@ -3,26 +3,28 @@ package com.swaglabs.tests;
 import com.swaglabs.driver.GUI_Driver;
 import com.swaglabs.listeners.TestNGListeners;
 import com.swaglabs.pages.LoginPage;
-import com.swaglabs.utils.JsonUtils;
+import io.qameta.allure.Severity;
+import io.qameta.allure.SeverityLevel;
+import io.qameta.allure.Step;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 @Listeners(TestNGListeners.class)
-public class HomePageTests {
+public class LoginTests {
     private GUI_Driver driver;
-    private JsonUtils testData;
 
+    @Severity(SeverityLevel.CRITICAL)
+    @Step("Test successful login")
     @Test
-    public void testClickingOnItemName(){
-        new LoginPage(driver).successfulLogin().clickItemIcon(testData.getJsonData("products-list.item1.name"));
+    public void testSuccessfulLogin(){
+        new LoginPage(driver).successfulLogin().assertSuccessfulLoginSoft();
     }
 
 
     @BeforeClass
-    public void setUP(){
-        testData = new JsonUtils("test-data");
+    public void setUp(){
         driver = new GUI_Driver("chrome");
         new LoginPage(driver).navigateToPage();
     }
@@ -31,4 +33,5 @@ public class HomePageTests {
     public void tearDown(){
         driver.browser().closeBrowser();
     }
+
 }

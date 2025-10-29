@@ -4,7 +4,6 @@ import org.apache.commons.io.FileUtils;
 
 import java.io.File;
 import java.io.FileInputStream;
-import java.io.FilterInputStream;
 import java.io.IOException;
 import java.util.Collection;
 import java.util.Properties;
@@ -24,23 +23,23 @@ public class PropertiesUtils {
                 try {
                     properties.load(new FileInputStream(propertyFile));
                 } catch (IOException e) {
-                    LogsUtils.error(e.getMessage());
+                    LogsManager.error(e.getMessage());
                 }
                 properties.putAll(System.getProperties());
                 System.getProperties().putAll(properties);
             });
-            LogsUtils.info("Loading properties file data");
+            LogsManager.info("Loading properties file data");
 
         } catch (Exception e) {
-            LogsUtils.error("Failed to load properties file date because" + e.getMessage() );
+            LogsManager.error("Failed to load properties file date because" + e.getMessage() );
         }
     }
 
-    public static String getPropertyValue(String key){
+    public static String getProperty(String key){
         try {
             return System.getProperty(key);
         }catch (Exception e){
-            LogsUtils.error(e.getMessage());
+            LogsManager.error(e.getMessage());
             return "";
         }
     }

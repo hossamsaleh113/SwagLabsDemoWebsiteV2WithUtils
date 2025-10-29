@@ -1,8 +1,6 @@
 package com.swaglabs.pages;
 
 import com.swaglabs.driver.GUI_Driver;
-import com.swaglabs.utils.CustomSoftAssertion;
-import com.swaglabs.utils.Validation;
 import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 
@@ -42,14 +40,14 @@ public class ItemPage {
     //validations
     @Step("Assert button state")
     public ItemPage assertButtonText(String expected){
-        Validation.validateEquals(getButtonState() , expected , "Incorrect button state");
+        driver.validations().assertEquals(getButtonState() , expected , "Incorrect button state");
         return this;
     }
 
     @Step("Assert product details")
     public ItemPage assetProductDetails(String exItemName , String  exPrice){
-        CustomSoftAssertion.softAssert.assertEquals(getItemName() ,exItemName , "Incorrect item name" );
-        CustomSoftAssertion.softAssert.assertEquals(getPrice() , exPrice ,"Incorrect Item price" );
+        driver.verifications().assertEquals(getItemName() ,exItemName , "Incorrect item name" );
+        driver.verifications().assertEquals(getPrice() , exPrice ,"Incorrect Item price" );
         return this;
     }
 

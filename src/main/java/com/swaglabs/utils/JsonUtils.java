@@ -7,26 +7,26 @@ import java.io.FileReader;
 
 public class JsonUtils {
     private static final String JSON_FILE_PATH = "src/test/resources/";
-    String jsonReader;
+    String jsonData;
     String jsonFileName;
     public JsonUtils(String jsonFileName){
         this.jsonFileName = jsonFileName;
         try {
             JSONObject data = (JSONObject) new JSONParser().parse(new FileReader(JSON_FILE_PATH + jsonFileName + ".json"));
-            jsonReader = data.toJSONString();
+            jsonData = data.toJSONString();
         } catch (Exception e) {
-            LogsUtils.error(e.getMessage());
+            LogsManager.error(e.getMessage());
         }
     }
 
     public String getJsonData(String jsonPath){
         String testData = "";
         try {
-            testData = JsonPath.read(jsonReader , jsonPath);
+            testData = JsonPath.read(jsonData , jsonPath);
         } catch (Exception e) {
-            LogsUtils.error( e.getMessage() + "No result for this jsonPath" + jsonPath + " in this json file");
+            LogsManager.error( e.getMessage() + "No result for this jsonPath" + jsonPath + " in this json file");
         }
-        LogsUtils.info("JsonPath: '"+ jsonPath + "' in the json file '" + jsonFileName + "' has value equals '"+ testData + "' ");
+        LogsManager.info("JsonPath: '"+ jsonPath + "' in the json file '" + jsonFileName + "' has value equals '"+ testData + "' ");
         return testData;
     }
 }

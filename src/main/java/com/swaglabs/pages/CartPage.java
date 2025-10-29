@@ -1,7 +1,6 @@
 package com.swaglabs.pages;
 
 import com.swaglabs.driver.GUI_Driver;
-import com.swaglabs.utils.CustomSoftAssertion;
 import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 
@@ -35,9 +34,9 @@ public class CartPage {
     //validations
     @Step("Asserting product details on cart page")
     public void assertProductDetails(String productName , String productPrice){
-        CustomSoftAssertion.softAssert.assertEquals(driver.element().getText( productName(productName)) , productName ,
+        driver.verifications().assertEquals(driver.element().getText( productName(productName)) , productName ,
                 "Product name mismatch");
-        CustomSoftAssertion.softAssert.assertEquals(driver.element().getText(productPrice(productName)) , productPrice ,
+        driver.verifications().assertEquals(driver.element().getText(productPrice(productName)) , productPrice ,
                 "Product price mismatch");
     }
 }

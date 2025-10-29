@@ -14,4 +14,8 @@ public class TimeStampUtils {
         SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd HH-mm-ss");
         return formatter.format(date);
     }
+
+    public static String getSimpleTimeStamp(){
+        return Long.toString(System.currentTimeMillis());
+    }
 }
