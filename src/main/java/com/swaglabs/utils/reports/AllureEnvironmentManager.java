@@ -17,7 +17,7 @@ public class AllureEnvironmentManager {
                         .put("Browser", getProperty("browserType"))
                         .put("Execution Type", getProperty("executionType"))
                         .put("URL", getProperty("baseUrlWeb"))
-                        .build(), (AllureConstants.RESULTS_FOLDER) + File.separator
+                        .build(), String.valueOf(AllureConstants.RESULTS_FOLDER) + File.separator
         );
         LogsManager.info("Allure environment variables set.");
         AllureBinaryManager.downloadAndExtract();

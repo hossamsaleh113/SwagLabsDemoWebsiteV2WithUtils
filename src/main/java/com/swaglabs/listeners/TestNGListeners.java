@@ -21,11 +21,11 @@ public class TestNGListeners implements IExecutionListener, ITestListener, IInvo
     @Override
     public void onExecutionStart() {
         PropertiesUtils.loadProperties();
-        AllureEnvironmentManager.setEnvironmentVariables();
         LogsManager.info("Test execution started");
         FilesUtils.deleteFiles(allure_results);
         FilesUtils.cleanDirectory(logs);
         FilesUtils.cleanDirectory(screenshots);
+        AllureEnvironmentManager.setEnvironmentVariables();
 
     }
 

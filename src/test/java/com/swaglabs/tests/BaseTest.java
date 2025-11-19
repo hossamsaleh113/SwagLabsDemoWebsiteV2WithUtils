@@ -3,10 +3,8 @@ package com.swaglabs.tests;
 import com.swaglabs.driver.GUI_Driver;
 import com.swaglabs.pages.LoginPage;
 import com.swaglabs.utils.JsonUtils;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.Optional;
-import org.testng.annotations.Parameters;
+import org.testng.annotations.*;
+
 import static com.swaglabs.utils.TimeStampUtils.getTimeStamp;
 
 public class BaseTest {
@@ -19,7 +17,7 @@ public class BaseTest {
      * Setup - runs before each test class
      * Browser is passed from TestNG XML
      */
-    @BeforeClass
+    @BeforeMethod
     @Parameters("browser")
     public void beforeClass(@Optional("chrome") String browserName) {
         // Load test data

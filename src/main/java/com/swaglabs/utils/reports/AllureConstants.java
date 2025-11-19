@@ -11,9 +11,9 @@ public class AllureConstants {
     public static final Path USER_DIR = Paths.get(getProperty("user.dir"), File.separator);
     public static final Path USER_HOME = Paths.get(getProperty("user.home"), File.separator);
 
-    public static final Path RESULTS_FOLDER = Paths.get(String.valueOf(USER_DIR),"test-outputs", File.separator,"allure-results",File.separator);
-    public static final Path REPORT_PATH = Paths.get(String.valueOf(USER_DIR),"test-outputs", File.separator ,"allure-report",File.separator); //single report .html
-    public static final Path FULL_REPORT_PATH = Paths.get(String.valueOf(USER_DIR),"test-outputs" , File.separator , "full-report",File.separator);
+    public static final Path RESULTS_FOLDER = Paths.get(String.valueOf(USER_DIR),"test-outputs" , "allure-results" ,File.separator);
+    public static final Path REPORT_PATH = Paths.get(String.valueOf(USER_DIR),"test-outputs" , "allure-report", File.separator); //single report .html
+    public static final Path FULL_REPORT_PATH = Paths.get(String.valueOf(USER_DIR),"test-outputs" , "full-report",File.separator);
 
     public static final Path HISTORY_FOLDER= Paths.get(FULL_REPORT_PATH.toString(), "history", File.separator); //after allure generate
     public static final Path RESULTS_HISTORY_FOLDER= Paths.get(RESULTS_FOLDER.toString(), "history", File.separator); // copy generated history to it
