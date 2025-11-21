@@ -1,0 +1,70 @@
+[INFO] - [20-11-2025 21:28:56] [TestNG-tests-2] [com.swaglabs.listeners.TestNGListeners] - Test case testAddItemToCart passed!
+[INFO] - [20-11-2025 21:28:56] [TestNG-tests-2] [com.swaglabs.pages.P02_HomePage] - Clicking Cart Icon
+[INFO] - [20-11-2025 21:28:56] [TestNG-tests-1] [com.swaglabs.listeners.TestNGListeners] - Test case testAddItemToCart passed!
+[INFO] - [20-11-2025 21:28:56] [TestNG-tests-2] [com.swaglabs.utils.Waits] - Waiting for element to be clickable: By.cssSelector: [data-test=shopping-cart-link]
+[INFO] - [20-11-2025 21:28:56] [TestNG-tests-2] [com.swaglabs.utils.Waits] - Waiting for element to be visible: By.cssSelector: [data-test=shopping-cart-link]
+[INFO] - [20-11-2025 21:28:56] [TestNG-tests-1] [com.swaglabs.pages.P02_HomePage] - Clicking Cart Icon
+[INFO] - [20-11-2025 21:28:56] [TestNG-tests-2] [com.swaglabs.utils.Waits] - Waiting for element to be present: By.cssSelector: [data-test=shopping-cart-link]
+[INFO] - [20-11-2025 21:28:56] [TestNG-tests-1] [com.swaglabs.utils.Waits] - Waiting for element to be clickable: By.cssSelector: [data-test=shopping-cart-link]
+[INFO] - [20-11-2025 21:28:56] [TestNG-tests-1] [com.swaglabs.utils.Waits] - Waiting for element to be visible: By.cssSelector: [data-test=shopping-cart-link]
+[INFO] - [20-11-2025 21:28:56] [TestNG-tests-1] [com.swaglabs.utils.Waits] - Waiting for element to be present: By.cssSelector: [data-test=shopping-cart-link]
+[INFO] - [20-11-2025 21:28:56] [TestNG-tests-2] [com.swaglabs.utils.actions.ElementActions] - Scrolling to element: By.cssSelector: [data-test=shopping-cart-link]
+[INFO] - [20-11-2025 21:28:56] [TestNG-tests-1] [com.swaglabs.utils.actions.ElementActions] - Scrolling to element: By.cssSelector: [data-test=shopping-cart-link]
+[INFO] - [20-11-2025 21:28:56] [TestNG-tests-2] [com.swaglabs.utils.actions.ElementActions] - Finding element By.cssSelector: [data-test=shopping-cart-link]
+[INFO] - [20-11-2025 21:28:56] [TestNG-tests-2] [com.swaglabs.utils.Waits] - Waiting for element to be present: By.cssSelector: [data-test=shopping-cart-link]
+[INFO] - [20-11-2025 21:28:56] [TestNG-tests-1] [com.swaglabs.utils.actions.ElementActions] - Finding element By.cssSelector: [data-test=shopping-cart-link]
+[INFO] - [20-11-2025 21:28:56] [TestNG-tests-1] [com.swaglabs.utils.Waits] - Waiting for element to be present: By.cssSelector: [data-test=shopping-cart-link]
+[INFO] - [20-11-2025 21:28:56] [TestNG-tests-2] [com.swaglabs.utils.actions.ElementActions] - Finding element By.cssSelector: [data-test=shopping-cart-link]
+[INFO] - [20-11-2025 21:28:56] [TestNG-tests-2] [com.swaglabs.utils.Waits] - Waiting for element to be present: By.cssSelector: [data-test=shopping-cart-link]
+[INFO] - [20-11-2025 21:28:56] [TestNG-tests-1] [com.swaglabs.utils.actions.ElementActions] - Finding element By.cssSelector: [data-test=shopping-cart-link]
+[INFO] - [20-11-2025 21:28:56] [TestNG-tests-1] [com.swaglabs.utils.Waits] - Waiting for element to be present: By.cssSelector: [data-test=shopping-cart-link]
+[INFO] - [20-11-2025 21:28:56] [TestNG-tests-1] [com.swaglabs.utils.actions.ElementActions] - Clicking on element: By.cssSelector: [data-test=shopping-cart-link]
+[INFO] - [20-11-2025 21:28:56] [TestNG-tests-2] [com.swaglabs.utils.actions.ElementActions] - Clicking on element: By.cssSelector: [data-test=shopping-cart-link]
+[INFO] - [20-11-2025 21:28:56] [TestNG-tests-1] [com.swaglabs.utils.JsonUtils] - JsonPath: 'products-list.item2.name' in the json file 'test-data' has value equals 'Sauce Labs Bike Light' 
+[INFO] - [20-11-2025 21:28:56] [TestNG-tests-2] [com.swaglabs.utils.JsonUtils] - JsonPath: 'products-list.item2.name' in the json file 'test-data' has value equals 'Sauce Labs Bike Light' 
+[INFO] - [20-11-2025 21:28:56] [TestNG-tests-1] [com.swaglabs.utils.JsonUtils] - JsonPath: 'products-list.item2.price' in the json file 'test-data' has value equals '$9.99' 
+[INFO] - [20-11-2025 21:28:56] [TestNG-tests-2] [com.swaglabs.utils.JsonUtils] - JsonPath: 'products-list.item2.price' in the json file 'test-data' has value equals '$9.99' 
+[INFO] - [20-11-2025 21:28:56] [TestNG-tests-1] [com.swaglabs.utils.Waits] - Waiting for element to be visible: By.xpath: //div[@class='inventory_item_name'][text() = 'Sauce Labs Bike Light']
+[INFO] - [20-11-2025 21:28:56] [TestNG-tests-2] [com.swaglabs.utils.Waits] - Waiting for element to be visible: By.xpath: //div[@class='inventory_item_name'][text() = 'Sauce Labs Bike Light']
+[INFO] - [20-11-2025 21:28:56] [TestNG-tests-1] [com.swaglabs.utils.Waits] - Waiting for element to be present: By.xpath: //div[@class='inventory_item_name'][text() = 'Sauce Labs Bike Light']
+[INFO] - [20-11-2025 21:28:56] [TestNG-tests-2] [com.swaglabs.utils.Waits] - Waiting for element to be present: By.xpath: //div[@class='inventory_item_name'][text() = 'Sauce Labs Bike Light']
+[INFO] - [20-11-2025 21:28:56] [TestNG-tests-1] [com.swaglabs.utils.actions.ElementActions] - Scrolling to element: By.xpath: //div[@class='inventory_item_name'][text() = 'Sauce Labs Bike Light']
+[INFO] - [20-11-2025 21:28:56] [TestNG-tests-2] [com.swaglabs.utils.actions.ElementActions] - Scrolling to element: By.xpath: //div[@class='inventory_item_name'][text() = 'Sauce Labs Bike Light']
+[INFO] - [20-11-2025 21:28:56] [TestNG-tests-1] [com.swaglabs.utils.actions.ElementActions] - Finding element By.xpath: //div[@class='inventory_item_name'][text() = 'Sauce Labs Bike Light']
+[INFO] - [20-11-2025 21:28:56] [TestNG-tests-1] [com.swaglabs.utils.Waits] - Waiting for element to be present: By.xpath: //div[@class='inventory_item_name'][text() = 'Sauce Labs Bike Light']
+[INFO] - [20-11-2025 21:28:56] [TestNG-tests-2] [com.swaglabs.utils.actions.ElementActions] - Finding element By.xpath: //div[@class='inventory_item_name'][text() = 'Sauce Labs Bike Light']
+[INFO] - [20-11-2025 21:28:56] [TestNG-tests-2] [com.swaglabs.utils.Waits] - Waiting for element to be present: By.xpath: //div[@class='inventory_item_name'][text() = 'Sauce Labs Bike Light']
+[INFO] - [20-11-2025 21:28:56] [TestNG-tests-1] [com.swaglabs.utils.actions.ElementActions] - Finding element By.xpath: //div[@class='inventory_item_name'][text() = 'Sauce Labs Bike Light']
+[INFO] - [20-11-2025 21:28:56] [TestNG-tests-1] [com.swaglabs.utils.Waits] - Waiting for element to be present: By.xpath: //div[@class='inventory_item_name'][text() = 'Sauce Labs Bike Light']
+[INFO] - [20-11-2025 21:28:56] [TestNG-tests-2] [com.swaglabs.utils.actions.ElementActions] - Finding element By.xpath: //div[@class='inventory_item_name'][text() = 'Sauce Labs Bike Light']
+[INFO] - [20-11-2025 21:28:56] [TestNG-tests-2] [com.swaglabs.utils.Waits] - Waiting for element to be present: By.xpath: //div[@class='inventory_item_name'][text() = 'Sauce Labs Bike Light']
+[INFO] - [20-11-2025 21:28:56] [TestNG-tests-1] [com.swaglabs.utils.actions.ElementActions] - Getting text form element: By.xpath: //div[@class='inventory_item_name'][text() = 'Sauce Labs Bike Light'] Text Sauce Labs Bike Light
+[INFO] - [20-11-2025 21:28:56] [TestNG-tests-2] [com.swaglabs.utils.actions.ElementActions] - Getting text form element: By.xpath: //div[@class='inventory_item_name'][text() = 'Sauce Labs Bike Light'] Text Sauce Labs Bike Light
+[INFO] - [20-11-2025 21:28:56] [TestNG-tests-1] [com.swaglabs.utils.actions.ElementActions] - Finding element By.xpath: //div[@class='inventory_item_name'][text() = 'Sauce Labs Bike Light']
+[INFO] - [20-11-2025 21:28:56] [TestNG-tests-1] [com.swaglabs.utils.Waits] - Waiting for element to be present: By.xpath: //div[@class='inventory_item_name'][text() = 'Sauce Labs Bike Light']
+[INFO] - [20-11-2025 21:28:56] [TestNG-tests-2] [com.swaglabs.utils.actions.ElementActions] - Finding element By.xpath: //div[@class='inventory_item_name'][text() = 'Sauce Labs Bike Light']
+[INFO] - [20-11-2025 21:28:56] [TestNG-tests-2] [com.swaglabs.utils.Waits] - Waiting for element to be present: By.xpath: //div[@class='inventory_item_name'][text() = 'Sauce Labs Bike Light']
+[INFO] - [20-11-2025 21:28:56] [TestNG-tests-2] [com.swaglabs.utils.Waits] - Waiting for element to be visible: By.xpath: //div[@class='inventory_item_name'][text() = 'Sauce Labs Bike Light']//..//..//div[@class='inventory_item_price']
+[INFO] - [20-11-2025 21:28:56] [TestNG-tests-1] [com.swaglabs.utils.Waits] - Waiting for element to be visible: By.xpath: //div[@class='inventory_item_name'][text() = 'Sauce Labs Bike Light']//..//..//div[@class='inventory_item_price']
+[INFO] - [20-11-2025 21:28:56] [TestNG-tests-2] [com.swaglabs.utils.Waits] - Waiting for element to be present: By.xpath: //div[@class='inventory_item_name'][text() = 'Sauce Labs Bike Light']//..//..//div[@class='inventory_item_price']
+[INFO] - [20-11-2025 21:28:56] [TestNG-tests-1] [com.swaglabs.utils.Waits] - Waiting for element to be present: By.xpath: //div[@class='inventory_item_name'][text() = 'Sauce Labs Bike Light']//..//..//div[@class='inventory_item_price']
+[INFO] - [20-11-2025 21:28:56] [TestNG-tests-1] [com.swaglabs.utils.actions.ElementActions] - Scrolling to element: By.xpath: //div[@class='inventory_item_name'][text() = 'Sauce Labs Bike Light']//..//..//div[@class='inventory_item_price']
+[INFO] - [20-11-2025 21:28:56] [TestNG-tests-2] [com.swaglabs.utils.actions.ElementActions] - Scrolling to element: By.xpath: //div[@class='inventory_item_name'][text() = 'Sauce Labs Bike Light']//..//..//div[@class='inventory_item_price']
+[INFO] - [20-11-2025 21:28:56] [TestNG-tests-1] [com.swaglabs.utils.actions.ElementActions] - Finding element By.xpath: //div[@class='inventory_item_name'][text() = 'Sauce Labs Bike Light']//..//..//div[@class='inventory_item_price']
+[INFO] - [20-11-2025 21:28:56] [TestNG-tests-1] [com.swaglabs.utils.Waits] - Waiting for element to be present: By.xpath: //div[@class='inventory_item_name'][text() = 'Sauce Labs Bike Light']//..//..//div[@class='inventory_item_price']
+[INFO] - [20-11-2025 21:28:56] [TestNG-tests-2] [com.swaglabs.utils.actions.ElementActions] - Finding element By.xpath: //div[@class='inventory_item_name'][text() = 'Sauce Labs Bike Light']//..//..//div[@class='inventory_item_price']
+[INFO] - [20-11-2025 21:28:56] [TestNG-tests-2] [com.swaglabs.utils.Waits] - Waiting for element to be present: By.xpath: //div[@class='inventory_item_name'][text() = 'Sauce Labs Bike Light']//..//..//div[@class='inventory_item_price']
+[INFO] - [20-11-2025 21:28:56] [TestNG-tests-2] [com.swaglabs.utils.actions.ElementActions] - Finding element By.xpath: //div[@class='inventory_item_name'][text() = 'Sauce Labs Bike Light']//..//..//div[@class='inventory_item_price']
+[INFO] - [20-11-2025 21:28:56] [TestNG-tests-2] [com.swaglabs.utils.Waits] - Waiting for element to be present: By.xpath: //div[@class='inventory_item_name'][text() = 'Sauce Labs Bike Light']//..//..//div[@class='inventory_item_price']
+[INFO] - [20-11-2025 21:28:56] [TestNG-tests-1] [com.swaglabs.utils.actions.ElementActions] - Finding element By.xpath: //div[@class='inventory_item_name'][text() = 'Sauce Labs Bike Light']//..//..//div[@class='inventory_item_price']
+[INFO] - [20-11-2025 21:28:56] [TestNG-tests-1] [com.swaglabs.utils.Waits] - Waiting for element to be present: By.xpath: //div[@class='inventory_item_name'][text() = 'Sauce Labs Bike Light']//..//..//div[@class='inventory_item_price']
+[INFO] - [20-11-2025 21:28:56] [TestNG-tests-1] [com.swaglabs.utils.actions.ElementActions] - Getting text form element: By.xpath: //div[@class='inventory_item_name'][text() = 'Sauce Labs Bike Light']//..//..//div[@class='inventory_item_price'] Text $9.99
+[INFO] - [20-11-2025 21:28:56] [TestNG-tests-2] [com.swaglabs.utils.actions.ElementActions] - Getting text form element: By.xpath: //div[@class='inventory_item_name'][text() = 'Sauce Labs Bike Light']//..//..//div[@class='inventory_item_price'] Text $9.99
+[INFO] - [20-11-2025 21:28:56] [TestNG-tests-1] [com.swaglabs.utils.actions.ElementActions] - Finding element By.xpath: //div[@class='inventory_item_name'][text() = 'Sauce Labs Bike Light']//..//..//div[@class='inventory_item_price']
+[INFO] - [20-11-2025 21:28:56] [TestNG-tests-1] [com.swaglabs.utils.Waits] - Waiting for element to be present: By.xpath: //div[@class='inventory_item_name'][text() = 'Sauce Labs Bike Light']//..//..//div[@class='inventory_item_price']
+[INFO] - [20-11-2025 21:28:56] [TestNG-tests-2] [com.swaglabs.utils.actions.ElementActions] - Finding element By.xpath: //div[@class='inventory_item_name'][text() = 'Sauce Labs Bike Light']//..//..//div[@class='inventory_item_price']
+[INFO] - [20-11-2025 21:28:56] [TestNG-tests-2] [com.swaglabs.utils.Waits] - Waiting for element to be present: By.xpath: //div[@class='inventory_item_name'][text() = 'Sauce Labs Bike Light']//..//..//div[@class='inventory_item_price']
+[INFO] - [20-11-2025 21:28:56] [TestNG-tests-1] [com.swaglabs.listeners.TestNGListeners] - Test case testCheckoutProduct passed!
+[INFO] - [20-11-2025 21:28:56] [TestNG-tests-1] [com.swaglabs.utils.Waits] - Waiting for element to be clickable: By.id: checkout
+[INFO] - [20-11-2025 21:28:56] [TestNG-tests-1] [com.swaglabs.utils.Waits] - Waiting for element to be visible: By.id: checkout
+[INFO] - [20-11-2025 21:28:56] [TestNG-tests-1] [com.swaglabs.utils.Waits] - Waiting for element to be present: By.id: checkout

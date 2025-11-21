@@ -15,7 +15,7 @@ import static com.swaglabs.utils.PropertiesUtils.getProperty;
 
 public class AllureAttachmentManager {
     // attachScreenshot, attachLogs, attachRecords methods would go here
-    public static void attachScreenshot(String name, String path) {
+    public synchronized static void attachScreenshot(String name, String path) {
         try {
             Path screenshot = Path.of(path);
             if (Files.exists(screenshot)) {

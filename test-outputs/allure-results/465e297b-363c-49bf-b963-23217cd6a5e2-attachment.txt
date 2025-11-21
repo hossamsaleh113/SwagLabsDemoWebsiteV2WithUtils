@@ -1,0 +1,73 @@
+[INFO] - [20-11-2025 21:28:50] [main] [com.swaglabs.utils.PropertiesUtils] - Loading properties file data
+[INFO] - [20-11-2025 21:28:50] [main] [com.swaglabs.listeners.TestNGListeners] - Test execution started
+[INFO] - [20-11-2025 21:28:50] [main] [com.swaglabs.utils.reports.AllureEnvironmentManager] - Allure environment variables set.
+[INFO] - [20-11-2025 21:28:52] [main] [com.swaglabs.utils.reports.AllureBinaryManager] - Allure binaries already exist.
+[INFO] - [20-11-2025 21:28:52] [main] [org.testng.internal.Utils] - [TestNG] Running:
+  C:\Users\hossa\IdeaProjects\DemoTestAutoProject\test-runners\parallel.xml
+
+[INFO] - [20-11-2025 21:28:52] [TestNG-tests-2] [com.swaglabs.utils.JsonUtils] - JsonPath: 'checkout-information.firstName' in the json file 'test-data' has value equals 'testFirst_' 
+[INFO] - [20-11-2025 21:28:52] [TestNG-tests-1] [com.swaglabs.utils.JsonUtils] - JsonPath: 'checkout-information.firstName' in the json file 'test-data' has value equals 'testFirst_' 
+[INFO] - [20-11-2025 21:28:52] [TestNG-tests-1] [com.swaglabs.utils.JsonUtils] - JsonPath: 'checkout-information.lastName' in the json file 'test-data' has value equals 'testSecond_' 
+[INFO] - [20-11-2025 21:28:52] [TestNG-tests-2] [com.swaglabs.utils.JsonUtils] - JsonPath: 'checkout-information.lastName' in the json file 'test-data' has value equals 'testSecond_' 
+[INFO] - [20-11-2025 21:28:52] [TestNG-tests-1] [com.swaglabs.driver.GUI_Driver] - Starting browser on thread 43 CHROME
+[INFO] - [20-11-2025 21:28:52] [TestNG-tests-2] [com.swaglabs.driver.GUI_Driver] - Starting browser on thread 44 EDGE
+[INFO] - [20-11-2025 21:28:53] [TestNG-tests-1] [com.swaglabs.driver.GUI_Driver] - Browser started successfully Thread: 43, Browser: CHROME
+[INFO] - [20-11-2025 21:28:53] [TestNG-tests-2] [com.swaglabs.driver.GUI_Driver] - Browser started successfully Thread: 44, Browser: EDGE
+[INFO] - [20-11-2025 21:28:54] [TestNG-tests-1] [com.swaglabs.utils.actions.BrowserActions] - Navigated to URL https://www.saucedemo.com/
+[INFO] - [20-11-2025 21:28:54] [TestNG-tests-2] [com.swaglabs.utils.actions.BrowserActions] - Navigated to URL https://www.saucedemo.com/
+[INFO] - [20-11-2025 21:28:54] [TestNG-tests-1] [com.swaglabs.utils.JsonUtils] - JsonPath: 'login-credentials.username' in the json file 'test-data' has value equals 'standard_user' 
+[INFO] - [20-11-2025 21:28:54] [TestNG-tests-2] [com.swaglabs.utils.JsonUtils] - JsonPath: 'login-credentials.username' in the json file 'test-data' has value equals 'standard_user' 
+[INFO] - [20-11-2025 21:28:54] [TestNG-tests-2] [com.swaglabs.utils.Waits] - Waiting for element to be visible: By.id: user-name
+[INFO] - [20-11-2025 21:28:54] [TestNG-tests-1] [com.swaglabs.utils.Waits] - Waiting for element to be visible: By.id: user-name
+[INFO] - [20-11-2025 21:28:54] [TestNG-tests-1] [com.swaglabs.utils.Waits] - Waiting for element to be present: By.id: user-name
+[INFO] - [20-11-2025 21:28:54] [TestNG-tests-2] [com.swaglabs.utils.Waits] - Waiting for element to be present: By.id: user-name
+[INFO] - [20-11-2025 21:28:54] [TestNG-tests-1] [com.swaglabs.utils.actions.ElementActions] - Scrolling to element: By.id: user-name
+[INFO] - [20-11-2025 21:28:54] [TestNG-tests-2] [com.swaglabs.utils.actions.ElementActions] - Scrolling to element: By.id: user-name
+[INFO] - [20-11-2025 21:28:54] [TestNG-tests-1] [com.swaglabs.utils.actions.ElementActions] - Finding element By.id: user-name
+[INFO] - [20-11-2025 21:28:54] [TestNG-tests-1] [com.swaglabs.utils.Waits] - Waiting for element to be present: By.id: user-name
+[INFO] - [20-11-2025 21:28:54] [TestNG-tests-2] [com.swaglabs.utils.actions.ElementActions] - Finding element By.id: user-name
+[INFO] - [20-11-2025 21:28:54] [TestNG-tests-2] [com.swaglabs.utils.Waits] - Waiting for element to be present: By.id: user-name
+[INFO] - [20-11-2025 21:28:54] [TestNG-tests-2] [com.swaglabs.utils.actions.ElementActions] - Finding element By.id: user-name
+[INFO] - [20-11-2025 21:28:54] [TestNG-tests-2] [com.swaglabs.utils.Waits] - Waiting for element to be present: By.id: user-name
+[INFO] - [20-11-2025 21:28:54] [TestNG-tests-1] [com.swaglabs.utils.actions.ElementActions] - Finding element By.id: user-name
+[INFO] - [20-11-2025 21:28:54] [TestNG-tests-1] [com.swaglabs.utils.Waits] - Waiting for element to be present: By.id: user-name
+[INFO] - [20-11-2025 21:28:54] [TestNG-tests-2] [com.swaglabs.utils.actions.ElementActions] - Data entered: standard_user in the field By.id: user-name
+[INFO] - [20-11-2025 21:28:54] [TestNG-tests-1] [com.swaglabs.utils.actions.ElementActions] - Data entered: standard_user in the field By.id: user-name
+[INFO] - [20-11-2025 21:28:54] [TestNG-tests-2] [com.swaglabs.utils.JsonUtils] - JsonPath: 'login-credentials.password' in the json file 'test-data' has value equals 'secret_sauce' 
+[INFO] - [20-11-2025 21:28:54] [TestNG-tests-1] [com.swaglabs.utils.JsonUtils] - JsonPath: 'login-credentials.password' in the json file 'test-data' has value equals 'secret_sauce' 
+[INFO] - [20-11-2025 21:28:54] [TestNG-tests-2] [com.swaglabs.utils.Waits] - Waiting for element to be visible: By.id: password
+[INFO] - [20-11-2025 21:28:54] [TestNG-tests-1] [com.swaglabs.utils.Waits] - Waiting for element to be visible: By.id: password
+[INFO] - [20-11-2025 21:28:54] [TestNG-tests-2] [com.swaglabs.utils.Waits] - Waiting for element to be present: By.id: password
+[INFO] - [20-11-2025 21:28:54] [TestNG-tests-1] [com.swaglabs.utils.Waits] - Waiting for element to be present: By.id: password
+[INFO] - [20-11-2025 21:28:54] [TestNG-tests-1] [com.swaglabs.utils.actions.ElementActions] - Scrolling to element: By.id: password
+[INFO] - [20-11-2025 21:28:54] [TestNG-tests-2] [com.swaglabs.utils.actions.ElementActions] - Scrolling to element: By.id: password
+[INFO] - [20-11-2025 21:28:54] [TestNG-tests-1] [com.swaglabs.utils.actions.ElementActions] - Finding element By.id: password
+[INFO] - [20-11-2025 21:28:54] [TestNG-tests-1] [com.swaglabs.utils.Waits] - Waiting for element to be present: By.id: password
+[INFO] - [20-11-2025 21:28:54] [TestNG-tests-2] [com.swaglabs.utils.actions.ElementActions] - Finding element By.id: password
+[INFO] - [20-11-2025 21:28:54] [TestNG-tests-2] [com.swaglabs.utils.Waits] - Waiting for element to be present: By.id: password
+[INFO] - [20-11-2025 21:28:54] [TestNG-tests-1] [com.swaglabs.utils.actions.ElementActions] - Finding element By.id: password
+[INFO] - [20-11-2025 21:28:54] [TestNG-tests-1] [com.swaglabs.utils.Waits] - Waiting for element to be present: By.id: password
+[INFO] - [20-11-2025 21:28:54] [TestNG-tests-2] [com.swaglabs.utils.actions.ElementActions] - Finding element By.id: password
+[INFO] - [20-11-2025 21:28:54] [TestNG-tests-2] [com.swaglabs.utils.Waits] - Waiting for element to be present: By.id: password
+[INFO] - [20-11-2025 21:28:55] [TestNG-tests-1] [com.swaglabs.utils.actions.ElementActions] - Data entered: secret_sauce in the field By.id: password
+[INFO] - [20-11-2025 21:28:55] [TestNG-tests-1] [com.swaglabs.utils.Waits] - Waiting for element to be clickable: By.id: login-button
+[INFO] - [20-11-2025 21:28:55] [TestNG-tests-1] [com.swaglabs.utils.Waits] - Waiting for element to be visible: By.id: login-button
+[INFO] - [20-11-2025 21:28:55] [TestNG-tests-1] [com.swaglabs.utils.Waits] - Waiting for element to be present: By.id: login-button
+[INFO] - [20-11-2025 21:28:55] [TestNG-tests-2] [com.swaglabs.utils.actions.ElementActions] - Data entered: secret_sauce in the field By.id: password
+[INFO] - [20-11-2025 21:28:55] [TestNG-tests-2] [com.swaglabs.utils.Waits] - Waiting for element to be clickable: By.id: login-button
+[INFO] - [20-11-2025 21:28:55] [TestNG-tests-2] [com.swaglabs.utils.Waits] - Waiting for element to be visible: By.id: login-button
+[INFO] - [20-11-2025 21:28:55] [TestNG-tests-2] [com.swaglabs.utils.Waits] - Waiting for element to be present: By.id: login-button
+[INFO] - [20-11-2025 21:28:55] [TestNG-tests-1] [com.swaglabs.utils.actions.ElementActions] - Scrolling to element: By.id: login-button
+[INFO] - [20-11-2025 21:28:55] [TestNG-tests-1] [com.swaglabs.utils.actions.ElementActions] - Finding element By.id: login-button
+[INFO] - [20-11-2025 21:28:55] [TestNG-tests-1] [com.swaglabs.utils.Waits] - Waiting for element to be present: By.id: login-button
+[INFO] - [20-11-2025 21:28:55] [TestNG-tests-2] [com.swaglabs.utils.actions.ElementActions] - Scrolling to element: By.id: login-button
+[INFO] - [20-11-2025 21:28:55] [TestNG-tests-2] [com.swaglabs.utils.actions.ElementActions] - Finding element By.id: login-button
+[INFO] - [20-11-2025 21:28:55] [TestNG-tests-2] [com.swaglabs.utils.Waits] - Waiting for element to be present: By.id: login-button
+[INFO] - [20-11-2025 21:28:55] [TestNG-tests-1] [com.swaglabs.utils.actions.ElementActions] - Finding element By.id: login-button
+[INFO] - [20-11-2025 21:28:55] [TestNG-tests-1] [com.swaglabs.utils.Waits] - Waiting for element to be present: By.id: login-button
+[INFO] - [20-11-2025 21:28:55] [TestNG-tests-2] [com.swaglabs.utils.actions.ElementActions] - Finding element By.id: login-button
+[INFO] - [20-11-2025 21:28:55] [TestNG-tests-2] [com.swaglabs.utils.Waits] - Waiting for element to be present: By.id: login-button
+[INFO] - [20-11-2025 21:28:55] [TestNG-tests-1] [com.swaglabs.utils.actions.ElementActions] - Clicking on element: By.id: login-button
+[INFO] - [20-11-2025 21:28:55] [TestNG-tests-2] [com.swaglabs.utils.actions.ElementActions] - Clicking on element: By.id: login-button
+[INFO] - [20-11-2025 21:28:55] [TestNG-tests-2] [com.swaglabs.utils.actions.BrowserActions] - Current URL is: https://www.saucedemo.com/inventory.html
+[INFO] - [20-11-2025 21:28:55] [TestNG-tests-1] [com.swaglabs.utils.actions.BrowserActions] - Current URL is: https://www.saucedemo.com/inventory.html

@@ -1,7 +1,7 @@
 package com.swaglabs.tests;
 
 import com.swaglabs.driver.GUI_Driver;
-import com.swaglabs.pages.LoginPage;
+import com.swaglabs.pages.P01_LoginPage;
 import com.swaglabs.utils.JsonUtils;
 import org.testng.annotations.*;
 
@@ -17,7 +17,7 @@ public class BaseTest {
      * Setup - runs before each test class
      * Browser is passed from TestNG XML
      */
-    @BeforeMethod
+    @BeforeClass
     @Parameters("browser")
     public void beforeClass(@Optional("chrome") String browserName) {
         // Load test data
@@ -29,12 +29,11 @@ public class BaseTest {
         driver = new GUI_Driver(browserName);
 
         // Navigate to login page
-        new LoginPage(driver).navigateToPage();
+        new P01_LoginPage(driver).navigateToPage();
     }
 
     @AfterClass
     public void tearDown() {
-        System.out.println("Closing browser on thread: " + Thread.currentThread().getId());
         if (driver != null) {
             driver.browser().closeBrowser();
             GUI_Driver.quit(); // Clean up ThreadLocal

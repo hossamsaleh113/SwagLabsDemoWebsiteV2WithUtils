@@ -2,7 +2,7 @@ package com.swaglabs.tests;
 
 import com.swaglabs.driver.GUI_Driver;
 import com.swaglabs.listeners.TestNGListeners;
-import com.swaglabs.pages.LoginPage;
+import com.swaglabs.pages.P01_LoginPage;
 import io.qameta.allure.Severity;
 import io.qameta.allure.SeverityLevel;
 import io.qameta.allure.Step;
@@ -19,14 +19,14 @@ public class LoginTests {
     @Step("Test successful login")
     @Test
     public void testSuccessfulLogin(){
-        new LoginPage(driver).successfulLogin().assertSuccessfulLoginSoft();
+        new P01_LoginPage(driver).successfulLogin().assertSuccessfulLoginSoft();
     }
 
 
     @BeforeClass
     public void setUp(){
         driver = new GUI_Driver("chrome");
-        new LoginPage(driver).navigateToPage();
+        new P01_LoginPage(driver).navigateToPage();
     }
 
     @AfterClass

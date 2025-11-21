@@ -1,0 +1,75 @@
+[INFO] - [20-11-2025 21:28:55] [TestNG-tests-2] [com.swaglabs.listeners.TestNGListeners] - Test case testSuccessfulLogin passed!
+[INFO] - [20-11-2025 21:28:55] [TestNG-tests-1] [com.swaglabs.listeners.TestNGListeners] - Test case testSuccessfulLogin passed!
+[INFO] - [20-11-2025 21:28:55] [TestNG-tests-2] [com.swaglabs.utils.JsonUtils] - JsonPath: 'products-list.item2.name' in the json file 'test-data' has value equals 'Sauce Labs Bike Light' 
+[INFO] - [20-11-2025 21:28:55] [TestNG-tests-1] [com.swaglabs.utils.JsonUtils] - JsonPath: 'products-list.item2.name' in the json file 'test-data' has value equals 'Sauce Labs Bike Light' 
+[INFO] - [20-11-2025 21:28:55] [TestNG-tests-2] [com.swaglabs.pages.P02_HomePage] - Adding Sauce Labs Bike Light to Cart
+[INFO] - [20-11-2025 21:28:55] [TestNG-tests-1] [com.swaglabs.pages.P02_HomePage] - Adding Sauce Labs Bike Light to Cart
+[INFO] - [20-11-2025 21:28:55] [TestNG-tests-2] [com.swaglabs.utils.Waits] - Waiting for element to be clickable: [unknown locator]
+[INFO] - [20-11-2025 21:28:55] [TestNG-tests-1] [com.swaglabs.utils.Waits] - Waiting for element to be clickable: [unknown locator]
+[INFO] - [20-11-2025 21:28:55] [TestNG-tests-2] [com.swaglabs.utils.Waits] - Waiting for element to be visible: [unknown locator]
+[INFO] - [20-11-2025 21:28:55] [TestNG-tests-1] [com.swaglabs.utils.Waits] - Waiting for element to be visible: [unknown locator]
+[INFO] - [20-11-2025 21:28:55] [TestNG-tests-2] [com.swaglabs.utils.Waits] - Waiting for element to be present: [unknown locator]
+[INFO] - [20-11-2025 21:28:55] [TestNG-tests-1] [com.swaglabs.utils.Waits] - Waiting for element to be present: [unknown locator]
+[INFO] - [20-11-2025 21:28:55] [TestNG-tests-1] [com.swaglabs.utils.actions.ElementActions] - Scrolling to element: [unknown locator]
+[INFO] - [20-11-2025 21:28:55] [TestNG-tests-2] [com.swaglabs.utils.actions.ElementActions] - Scrolling to element: [unknown locator]
+[INFO] - [20-11-2025 21:28:55] [TestNG-tests-1] [com.swaglabs.utils.actions.ElementActions] - Finding element [unknown locator]
+[INFO] - [20-11-2025 21:28:55] [TestNG-tests-1] [com.swaglabs.utils.Waits] - Waiting for element to be present: [unknown locator]
+[INFO] - [20-11-2025 21:28:55] [TestNG-tests-2] [com.swaglabs.utils.actions.ElementActions] - Finding element [unknown locator]
+[INFO] - [20-11-2025 21:28:55] [TestNG-tests-2] [com.swaglabs.utils.Waits] - Waiting for element to be present: [unknown locator]
+[INFO] - [20-11-2025 21:28:55] [TestNG-tests-1] [com.swaglabs.utils.actions.ElementActions] - Finding element [unknown locator]
+[INFO] - [20-11-2025 21:28:55] [TestNG-tests-1] [com.swaglabs.utils.Waits] - Waiting for element to be present: [unknown locator]
+[INFO] - [20-11-2025 21:28:55] [TestNG-tests-2] [com.swaglabs.utils.actions.ElementActions] - Finding element [unknown locator]
+[INFO] - [20-11-2025 21:28:55] [TestNG-tests-2] [com.swaglabs.utils.Waits] - Waiting for element to be present: [unknown locator]
+[INFO] - [20-11-2025 21:28:55] [TestNG-tests-2] [com.swaglabs.utils.actions.ElementActions] - Clicking on element: [unknown locator]
+[INFO] - [20-11-2025 21:28:55] [TestNG-tests-1] [com.swaglabs.utils.actions.ElementActions] - Clicking on element: [unknown locator]
+[INFO] - [20-11-2025 21:28:55] [TestNG-tests-2] [com.swaglabs.utils.JsonUtils] - JsonPath: 'products-list.item2.name' in the json file 'test-data' has value equals 'Sauce Labs Bike Light' 
+[INFO] - [20-11-2025 21:28:55] [TestNG-tests-1] [com.swaglabs.utils.JsonUtils] - JsonPath: 'products-list.item2.name' in the json file 'test-data' has value equals 'Sauce Labs Bike Light' 
+[INFO] - [20-11-2025 21:28:55] [TestNG-tests-1] [com.swaglabs.utils.Waits] - Waiting for element to be visible: [unknown locator]
+[INFO] - [20-11-2025 21:28:55] [TestNG-tests-2] [com.swaglabs.utils.Waits] - Waiting for element to be visible: [unknown locator]
+[INFO] - [20-11-2025 21:28:55] [TestNG-tests-1] [com.swaglabs.utils.Waits] - Waiting for element to be present: [unknown locator]
+[INFO] - [20-11-2025 21:28:55] [TestNG-tests-2] [com.swaglabs.utils.Waits] - Waiting for element to be present: [unknown locator]
+[INFO] - [20-11-2025 21:28:55] [TestNG-tests-2] [com.swaglabs.utils.actions.ElementActions] - Scrolling to element: [unknown locator]
+[INFO] - [20-11-2025 21:28:55] [TestNG-tests-2] [com.swaglabs.utils.actions.ElementActions] - Finding element [unknown locator]
+[INFO] - [20-11-2025 21:28:55] [TestNG-tests-2] [com.swaglabs.utils.Waits] - Waiting for element to be present: [unknown locator]
+[INFO] - [20-11-2025 21:28:55] [TestNG-tests-1] [com.swaglabs.utils.actions.ElementActions] - Scrolling to element: [unknown locator]
+[INFO] - [20-11-2025 21:28:55] [TestNG-tests-1] [com.swaglabs.utils.actions.ElementActions] - Finding element [unknown locator]
+[INFO] - [20-11-2025 21:28:55] [TestNG-tests-1] [com.swaglabs.utils.Waits] - Waiting for element to be present: [unknown locator]
+[INFO] - [20-11-2025 21:28:55] [TestNG-tests-2] [com.swaglabs.utils.actions.ElementActions] - Finding element [unknown locator]
+[INFO] - [20-11-2025 21:28:55] [TestNG-tests-2] [com.swaglabs.utils.Waits] - Waiting for element to be present: [unknown locator]
+[INFO] - [20-11-2025 21:28:55] [TestNG-tests-1] [com.swaglabs.utils.actions.ElementActions] - Finding element [unknown locator]
+[INFO] - [20-11-2025 21:28:55] [TestNG-tests-1] [com.swaglabs.utils.Waits] - Waiting for element to be present: [unknown locator]
+[INFO] - [20-11-2025 21:28:55] [TestNG-tests-2] [com.swaglabs.utils.actions.ElementActions] - Getting text form element: [unknown locator] Text Remove
+[INFO] - [20-11-2025 21:28:55] [TestNG-tests-2] [com.swaglabs.utils.actions.ElementActions] - Finding element [unknown locator]
+[INFO] - [20-11-2025 21:28:55] [TestNG-tests-2] [com.swaglabs.utils.Waits] - Waiting for element to be present: [unknown locator]
+[INFO] - [20-11-2025 21:28:55] [TestNG-tests-1] [com.swaglabs.utils.actions.ElementActions] - Getting text form element: [unknown locator] Text Remove
+[INFO] - [20-11-2025 21:28:55] [TestNG-tests-1] [com.swaglabs.utils.actions.ElementActions] - Finding element [unknown locator]
+[INFO] - [20-11-2025 21:28:55] [TestNG-tests-1] [com.swaglabs.utils.Waits] - Waiting for element to be present: [unknown locator]
+[INFO] - [20-11-2025 21:28:55] [TestNG-tests-2] [com.swaglabs.pages.P02_HomePage] - Sauce Labs Bike Light added to cart successfully
+[INFO] - [20-11-2025 21:28:55] [TestNG-tests-1] [com.swaglabs.pages.P02_HomePage] - Sauce Labs Bike Light added to cart successfully
+[INFO] - [20-11-2025 21:28:55] [TestNG-tests-2] [com.swaglabs.utils.actions.ElementActions] - Finding element By.cssSelector: [data-test='shopping-cart-badge']
+[INFO] - [20-11-2025 21:28:55] [TestNG-tests-2] [com.swaglabs.utils.Waits] - Waiting for element to be present: By.cssSelector: [data-test='shopping-cart-badge']
+[INFO] - [20-11-2025 21:28:55] [TestNG-tests-1] [com.swaglabs.utils.actions.ElementActions] - Finding element By.cssSelector: [data-test='shopping-cart-badge']
+[INFO] - [20-11-2025 21:28:55] [TestNG-tests-1] [com.swaglabs.utils.Waits] - Waiting for element to be present: By.cssSelector: [data-test='shopping-cart-badge']
+[INFO] - [20-11-2025 21:28:55] [TestNG-tests-1] [com.swaglabs.utils.Waits] - Waiting for element to be visible: By.cssSelector: [data-test='shopping-cart-badge']
+[INFO] - [20-11-2025 21:28:55] [TestNG-tests-2] [com.swaglabs.utils.Waits] - Waiting for element to be visible: By.cssSelector: [data-test='shopping-cart-badge']
+[INFO] - [20-11-2025 21:28:55] [TestNG-tests-1] [com.swaglabs.utils.Waits] - Waiting for element to be present: By.cssSelector: [data-test='shopping-cart-badge']
+[INFO] - [20-11-2025 21:28:55] [TestNG-tests-2] [com.swaglabs.utils.Waits] - Waiting for element to be present: By.cssSelector: [data-test='shopping-cart-badge']
+[INFO] - [20-11-2025 21:28:55] [TestNG-tests-2] [com.swaglabs.utils.actions.ElementActions] - Scrolling to element: By.cssSelector: [data-test='shopping-cart-badge']
+[INFO] - [20-11-2025 21:28:55] [TestNG-tests-1] [com.swaglabs.utils.actions.ElementActions] - Scrolling to element: By.cssSelector: [data-test='shopping-cart-badge']
+[INFO] - [20-11-2025 21:28:55] [TestNG-tests-2] [com.swaglabs.utils.actions.ElementActions] - Finding element By.cssSelector: [data-test='shopping-cart-badge']
+[INFO] - [20-11-2025 21:28:55] [TestNG-tests-2] [com.swaglabs.utils.Waits] - Waiting for element to be present: By.cssSelector: [data-test='shopping-cart-badge']
+[INFO] - [20-11-2025 21:28:55] [TestNG-tests-1] [com.swaglabs.utils.actions.ElementActions] - Finding element By.cssSelector: [data-test='shopping-cart-badge']
+[INFO] - [20-11-2025 21:28:55] [TestNG-tests-1] [com.swaglabs.utils.Waits] - Waiting for element to be present: By.cssSelector: [data-test='shopping-cart-badge']
+[INFO] - [20-11-2025 21:28:55] [TestNG-tests-2] [com.swaglabs.utils.actions.ElementActions] - Finding element By.cssSelector: [data-test='shopping-cart-badge']
+[INFO] - [20-11-2025 21:28:55] [TestNG-tests-2] [com.swaglabs.utils.Waits] - Waiting for element to be present: By.cssSelector: [data-test='shopping-cart-badge']
+[INFO] - [20-11-2025 21:28:55] [TestNG-tests-1] [com.swaglabs.utils.actions.ElementActions] - Finding element By.cssSelector: [data-test='shopping-cart-badge']
+[INFO] - [20-11-2025 21:28:55] [TestNG-tests-1] [com.swaglabs.utils.Waits] - Waiting for element to be present: By.cssSelector: [data-test='shopping-cart-badge']
+[INFO] - [20-11-2025 21:28:55] [TestNG-tests-2] [com.swaglabs.utils.actions.ElementActions] - Getting text form element: By.cssSelector: [data-test='shopping-cart-badge'] Text 1
+[INFO] - [20-11-2025 21:28:55] [TestNG-tests-2] [com.swaglabs.utils.actions.ElementActions] - Finding element By.cssSelector: [data-test='shopping-cart-badge']
+[INFO] - [20-11-2025 21:28:55] [TestNG-tests-2] [com.swaglabs.utils.Waits] - Waiting for element to be present: By.cssSelector: [data-test='shopping-cart-badge']
+[INFO] - [20-11-2025 21:28:55] [TestNG-tests-1] [com.swaglabs.utils.actions.ElementActions] - Getting text form element: By.cssSelector: [data-test='shopping-cart-badge'] Text 1
+[INFO] - [20-11-2025 21:28:55] [TestNG-tests-1] [com.swaglabs.utils.actions.ElementActions] - Finding element By.cssSelector: [data-test='shopping-cart-badge']
+[INFO] - [20-11-2025 21:28:55] [TestNG-tests-1] [com.swaglabs.utils.Waits] - Waiting for element to be present: By.cssSelector: [data-test='shopping-cart-badge']
+[INFO] - [20-11-2025 21:28:55] [TestNG-tests-2] [com.swaglabs.pages.P02_HomePage] - Number 1 is correctly shown on cart icon
+[INFO] - [20-11-2025 21:28:55] [TestNG-tests-1] [com.swaglabs.pages.P02_HomePage] - Number 1 is correctly shown on cart icon
+[ERROR] - [20-11-2025 21:28:56] [TestNG-tests-1] [com.swaglabs.utils.media.ScreenshotsManager] - Failed to take screenshottest-outputs\screenshots\passed-testAddItemToCart_2025-11-20 21-28-56.png: The process cannot access the file because it is being used by another process

@@ -39,7 +39,7 @@ public class FilesUtils {
         }
     }
 
-    public static File getLatestFile(String folderPath) {
+    public synchronized static File getLatestFile(String folderPath) {
         File folder = new File(folderPath);
         File[] files = folder.listFiles();
         if (files == null || files.length == 0) {
