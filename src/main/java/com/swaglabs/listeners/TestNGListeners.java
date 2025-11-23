@@ -32,9 +32,9 @@ public class TestNGListeners implements IExecutionListener, ITestListener, IInvo
     @Override
     public void onExecutionFinish() {
         AllureReportGenerator.copyHistory();
-        AllureReportGenerator.generateReports(false);
-        AllureReportGenerator.generateReports(true);
-        AllureReportGenerator.openReport();
+//        AllureReportGenerator.generateReports(false);
+//        AllureReportGenerator.generateReports(true);
+//        AllureReportGenerator.openReport();
         LogsManager.info("Test execution finished");
 
     }
